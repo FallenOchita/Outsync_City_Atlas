@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>Outsync City Atlas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="masthead">
+        <div class="eyebrow">OUTSYNC ROLEPLAY // CITY SERVICES</div>
+        <div class="heading-row">
+            <div>
+                <h1>NIGHT CITY <span>ATLAS</span></h1>
+                <p id="subtitle">POSTAL &amp; STREET DIRECTORY</p>
+            </div>
+            <div class="version" id="version">v0.1.0</div>
+        </div>
+    </header>
+
+    <main>
+        <label class="search-label" for="search">SEARCH THE CITY</label>
+        <input id="search" type="search"
+            placeholder="Postal code, district, or street name..."
+            autocomplete="off">
+
+        <section class="status-row">
+            <span class="status-dot"></span>
+            <span id="catalog-status">Waiting for city data…</span>
+            <span class="draft-tag" id="postal-status">DRAFT DATA</span>
+        </section>
+
+        <section class="section-heading">
+            <h2>POSTAL DISTRICTS</h2>
+            <span id="postal-count">0 AREAS</span>
+        </section>
+        <div id="postal-results" class="postal-grid"></div>
+
+        <section class="section-heading street-heading">
+            <h2>STREET DIRECTORY</h2>
+            <span id="street-count">0 STREETS</span>
+        </section>
+        <div id="street-results" class="street-list"></div>
+
+        <footer>
+            <span>OUTSYNC CITY ATLAS</span>
+            <span>COMMUNITY MAP DIRECTORY</span>
+        </footer>
+    </main>
+</body>
+</html>
